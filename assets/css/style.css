@@ -1,0 +1,252 @@
+@font-face {
+	font-family: 'Poetsen_one';
+	src: url('/assets/fonts/Poetsen_One/PoetsenOne-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	overflow-x: hidden;
+}
+p {
+	font-size: large;
+}
+h1,
+h2 {
+	text-align: center;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	background: rgb(21, 32, 43);
+	background: linear-gradient(190deg, rgb(0, 0, 0), rgb(72, 58, 121) 58%);
+	height: 100%;
+	color: white;
+	font-family: 'Poetsen_one', sans-serif;
+	min-height: 100vh;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 5rem 5%;
+	height: 100%;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 2rem;
+}
+.search-box {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+.search-title {
+	font-size: xx-large;
+	font-weight: 400;
+}
+form {
+	display: flex;
+	height: auto;
+}
+form button {
+	background-color: #000000;
+	border: solid #ac78d4 0.2rem;
+	color: rgb(255, 255, 255);
+	border-radius: 0.8rem 0 0 0.8rem;
+	padding: 1rem 1rem;
+}
+form input {
+	background-color: #2c3442;
+	border: solid #ac78d4 0.2rem;
+	color: rgb(255, 255, 255);
+	border-radius: 0 0.5rem 0.5rem 0;
+}
+input::placeholder {
+	color: rgb(255, 255, 255);
+	text-align: center;
+}
+.pokemon-container {
+	display: flex;
+	flex-direction: column;
+}
+.pokemon-card {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+.img-container {
+	display: flex;
+	height: auto;
+}
+.img-container img {
+	width: 100%;
+	margin: 0 auto;
+}
+.info-container {
+	display: flex;
+	flex-direction: column;
+}
+.info {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	border-bottom: solid #979797;
+}
+footer {
+	width: 100%;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	background-color: #010d24;
+	margin-top: auto;
+	padding: 2rem 0.5rem;
+}
+.search-msg {
+	width: 100%;
+	text-align: center;
+}
+
+@media (min-width: 750px) {
+	.container {
+		width: 100%;
+		margin: 0 auto;
+		padding: 3rem 2rem;
+		border-radius: 2rem;
+		gap: 5rem;
+	}
+	.search-box {
+		gap: 2rem;
+		height: auto;
+	}
+	form {
+		width: 25rem;
+	}
+	form button {
+		background-color: #000000;
+		border: solid #ac78d4 0.2rem;
+		font-size: medium;
+		font-weight: 800;
+		color: rgb(255, 255, 255);
+		border-radius: 0.8rem 0 0 0.8rem;
+		padding: 1rem 1rem;
+		width: 30%;
+	}
+	form input {
+		background-color: #2c3442;
+		border: solid #ac78d4 0.2rem;
+		color: rgb(255, 255, 255);
+		font-size: medium;
+		font-weight: 800;
+		border-radius: 0 0.5rem 0.5rem 0;
+		width: 70%;
+	}
+	input ::placeholder {
+		font-size: medium;
+		text-align: center;
+	}
+	.pokemon-card {
+		padding: 5rem 2rem;
+		border: solid #ac78d4 0.2rem;
+		background-color: #010d24;
+		border-radius: 1rem;
+		flex-wrap: wrap;
+		gap: 2rem;
+		width: 40%;
+	}
+	.img-container {
+		width: 30%;
+	}
+	.title {
+		font-size: 3rem;
+		font-weight: 600;
+	}
+	.info-container {
+		width: 70%;
+		height: auto;
+		gap: 2rem;
+		padding: 1rem;
+		align-items: center;
+		border: solid #979797 0.4rem;
+		border-radius: 1rem;
+	}
+	.info {
+		width: 90%;
+	}
+	footer {
+		width: 100%;
+		text-align: center;
+		padding: 3rem;
+		color: rgb(255, 255, 255);
+		font-size: medium;
+	}
+	.search-msg {
+		width: 100%;
+		text-align: center;
+	}
+}
+@media (max-width: 750px) {
+	.container {
+		gap: 4rem;
+	}
+	.search-box {
+		gap: 2rem;
+		height: auto;
+	}
+	form {
+		width: 18rem;
+	}
+	form button {
+		padding: 0.5rem;
+		width: 38%;
+		font-size: small;
+		font-weight: 700;
+	}
+	form input {
+		width: 60%;
+		padding: 0.5rem;
+		width: 62%;
+		font-size: small;
+		font-weight: 700;
+	}
+	input::placeholder {
+		font-size: small;
+	}
+	.pokemon-container {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.pokemon-card {
+		padding: 2rem;
+		border: solid #ac78d4 0.2rem;
+		background-color: #010d24;
+		border-radius: 1rem;
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	.info-container {
+		width: 90%;
+	}
+}
+
+.animate {
+	animation: fadeIn 0.9s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
